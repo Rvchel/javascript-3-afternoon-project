@@ -22,6 +22,8 @@ var carDetails = {
 */
 
 //Code Here
+let {color, make, model, year} = carDetails;
+console.log(name, make, model, year);
 
 
 
@@ -35,11 +37,13 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  let {title, firstName, lastName} = obj
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
+
 
 
 
@@ -54,7 +58,13 @@ function greeting( obj ) {
 */
 
 //Code Here
+function totalPopulation(obj) {
+  
+  let {utah, california, texas, arizona} = obj
 
+  return utah + california + texas + arizona;
+}
+//return means to give back the value
 
 
 ////////// PROBLEM 4 //////////
@@ -68,6 +78,15 @@ function greeting( obj ) {
 */
 
 //Code Here
+function ingredients(obj) {
+  
+  let {carb, fat, protein} = obj
+  
+  return [carb, fat, protein]
+
+}
+
+
 
 
 
@@ -87,6 +106,23 @@ function greeting( obj ) {
 
 //Code Here
 
+function largeNumbers({first, second, third}) {
+
+  if(first < second) {
+    if(first < second) {
+      return first
+    } else {
+      return third
+    } 
+  } 
+  else if(second < third) {
+    return second
+  }
+  else {
+    return third
+  }
+    
+  }
 
 
 ////////// PROBLEM 6 //////////
@@ -98,5 +134,23 @@ function greeting( obj ) {
 */
 
 //Code Here
+function numberGroups({a, b, c}) {
+  if( a.length < b ) {
+    if(a.length < c) {
+      return a
+    }
+    else {
+      return c
+    }
+  }
+  else if(b.length < c) {
+    return b
+  }
+  else {
+    return c
+  }
 
+}
+
+//use .length a.length gtreater than
 
